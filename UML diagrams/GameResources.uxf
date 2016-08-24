@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>160</y>
+      <w>610</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;GameResources&gt;&gt;
+Package::SwinGameSDK,System.Collections.Generic
+--
+- _Images: Dictionary&lt;string,Music&gt; &lt;&lt;static&gt;&gt;
+- _Fonts: Dictionary&lt;string,Font&gt; &lt;&lt;static&gt;&gt;
+- _Sounds: Dictonary&lt;string,SoundEffect&gt; &lt;&lt;static&gt;&gt;
+- _Music: Dictionary&lt;string,Music&gt; &lt;&lt;static&gt;&gt;
+- _Background: Bitmap &lt;&lt;static&gt;&gt;
+- _Animation: Bitmap &lt;&lt;static&gt;&gt;
+- _LoaderFull: Bitmap &lt;&lt;static&gt;&gt;
+- _LoaderEmpty: Bitmap &lt;&lt;static&gt;&gt;
+- _LoadingFont: Font &lt;&lt;static&gt;&gt;
+- _StartSound: SoundEffect &lt;&lt;static&gt;&gt;
+
+--
++ LoadFonts() &lt;&lt;static&gt;&gt;
++ LoadImages() &lt;&lt;static&gt;&gt;
++ LoadSounds() &lt;&lt;static&gt;&gt;
++ LoadMusic() &lt;&lt;static&gt;&gt;
++ GameFont(string font):Font &lt;&lt;static&gt;&gt;
++ GameImage(string image):Bitmap &lt;&lt;static&gt;&gt;
++ GameSound(string sound):SoundEffect &lt;&lt;static&gt;&gt;
++ GameMusic(string music):Music &lt;&lt;static&gt;&gt;
++ LoadResources() &lt;&lt;static&gt;&gt;
+
+- ShowLoadingScreen() &lt;&lt;static&gt;&gt;
+- PlaySwinGameIntro() &lt;&lt;static&gt;&gt;
+- ShowMessage(string message, int number) &lt;&lt;static&gt;&gt;
+- EndLoadingScreen(int width, int height) &lt;&lt;static&gt;&gt;
+- NewFont(string fontName, string filename, int size) &lt;&lt;static&gt;&gt;
+- NewImage(string imageName, string filename) &lt;&lt;static&gt;&gt;
+- NewTransparentColorImage(string imageName, string fileName, Color transColor) &lt;&lt;static&gt;&gt;
+- NewSound(string soundName, string filename) &lt;&lt;static&gt;&gt;
+- NewMusic(string musicName, string filename) &lt;&lt;static&gt;&gt;
+- FreeFonts() &lt;&lt;static&gt;&gt;
+- FreeImages() &lt;&lt;static&gt;&gt;
+- FreeSounds() &lt;&lt;static&gt;&gt;
+- FreeMusic() &lt;&lt;static&gt;&gt;
+- FreeResources() &lt;&lt;static&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
