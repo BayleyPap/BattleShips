@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>200</y>
+      <w>490</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;GameController&gt;&gt;
+Package::Microsoft.VisualBasic,System,System.Collections,
+System.Collections.Generic,System.Data,System.Diagnostics,
+SwinGameSDK
+--
+- _theGame: BattleShipsGame &lt;&lt;static&gt;&gt;
+- _human: Player &lt;&lt;static&gt;&gt;
+- _ai : AIPlayer &lt;&lt;static&gt;&gt;
+- _state: Stack&lt;GameState&gt; &lt;&lt;static&gt;&gt;
+- _aiSettings: AIOption &lt;&lt;static&gt;&gt; 
+--
++ CurrentState: GameState &lt;&lt;readonly, static, property&gt;&gt;
++ HumanPlayer: Player &lt;&lt;readonly, static, property&gt;&gt;
++ ComputerPlayer: Player &lt;&lt;readonly, static, property&gt;&gt;
+
++ GameControler()
++ StartGame() &lt;&lt;static&gt;&gt;
+- EndGame() &lt;&lt;static&gt;&gt;
+- GridChaged(object sender, EventArgs args) &lt;&lt;static&gt;&gt;
+- PlayHitSequence(int row, int column, bool showAnimation) &lt;&lt;static&gt;&gt;
+- PlayMissSequence(int row, int column, bool showAnimation) &lt;&lt;static&gt;&gt;
+- AttackCompleted(object sender, AttackResult result) &lt;&lt;static&gt;&gt;
++ EndDeployment() &lt;&lt;static&gt;&gt;
++ Attack(int row, int col) &lt;&lt;static&gt;&gt;
+- AIAttack() &lt;&lt;static&gt;&gt;
+- CheckAttackResult(AttackResult result) &lt;&lt;static&gt;&gt;
++ HandleUserInput() &lt;&lt;static&gt;&gt;
++ DrawScreen() &lt;&lt;static&gt;&gt;
++ AddNewState(GameState state) &lt;&lt;static&gt;&gt;
++ SwitchState(GameState newState) &lt;&lt;static&gt;&gt;
++ EndCurrentState() &lt;&lt;static&gt;&gt;
++ SetDifficulty(AIOption setting)&lt;&lt;static&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
