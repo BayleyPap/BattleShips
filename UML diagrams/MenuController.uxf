@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>110</y>
+      <w>430</w>
+      <h>720</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MenuController&gt;&gt;
+Package::Microsoft.VisualBasic,System,System.Collections,
+System.Collections.Generic,System.Data,System.Diagnostics,
+SwinGameSDK
+--
+- _menuStructure: string[][] &lt;&lt;static readonly&gt;&gt;
+- MENU_TOP: int &lt;&lt;const&gt;&gt;
+- MENU_LEFT: int &lt;&lt;const&gt;&gt;
+- MENU_GAP: int &lt;&lt;const&gt;&gt;
+- BUTTON_WIDTH: int &lt;&lt;const&gt;&gt;
+- BUTTON_HEIGHT: int &lt;&lt;const&gt;&gt;
+- BUTTON_SEP: int &lt;&lt;const&gt;&gt;
+- TEXT_OFFSET: int &lt;&lt;const&gt;&gt;
+- MAIN_MENU: int &lt;&lt;const&gt;&gt;
+- MAIN_MENU_PLAY_BUTTON: int &lt;&lt;const&gt;&gt;
+- MAIN_MENU_SETUP_BUTTON: int &lt;&lt;const&gt;&gt;
+- MAIN_MENU_TOP_SCORES_BUTTON: int &lt;&lt;const&gt;&gt;
+- MAIN_MENU_QUIT_BUTTON: int &lt;&lt;const&gt;&gt;
+- SETUP_MENU_EASY_BUTTON: int &lt;&lt;const&gt;&gt;
+- SETUP_MENU_MEDIUM_BUTTON: int &lt;&lt;const&gt;&gt;
+- SETUP_MENU_HARD_BUTTON: int &lt;&lt;const&gt;&gt;
+- SETUP_MENU_EXIT_BUTTON: int &lt;&lt;const&gt;&gt;
+- GAME_MENU_RETURN_BUTTON: int &lt;&lt;const&gt;&gt;
+- GAME_MENU_SURRENDER_BUTTON: int &lt;&lt;const&gt;&gt;
+- GAME_MENU_QUIT_BUTTON: int &lt;&lt;const&gt;&gt;
+- MENU_COLOR: Color &lt;&lt;static readonly&gt;&gt;
+- HIGHLIGHT_COLOR: Color &lt;&lt;static readonly&gt;&gt;
+--
++ HandleMainMenuInput() &lt;&lt;static&gt;&gt;
++ HandleSetupMenuInput() &lt;&lt;static&gt;&gt;
++ HandleGameMenuInput() &lt;&lt;static&gt;&gt;
+
+- HandleMenuInput(int menu, int level, int xOffset): bool &lt;&lt;static&gt;&gt;
+
++ DrawMainMenu() &lt;&lt;static&gt;&gt;
++ DrawGameMenu() &lt;&lt;static&gt;&gt;
++ DrawSettings() &lt;&lt;static&gt;&gt;
+- DrawButtons(int menu) &lt;&lt;static&gt;&gt;
+- DrawButtons(int menu, int level, int xOffset) &lt;&lt;static&gt;&gt;
+- IsMouseOverButton(int button): bool &lt;&lt;static&gt;&gt;
+- IsMouseOverMenu(int button, int level, int xOffset): bool &lt;&lt;static&gt;&gt;
+- PerformMenuAction(int menu, int button) &lt;&lt;static&gt;&gt;
+- PerformMainMenueAction(int button) &lt;&lt;static&gt;&gt;
+- PerformSetupMenuAction(int button) &lt;&lt;static&gt;&gt;
+- PerformGameMenuAction(int button) &lt;&lt;static&gt;&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

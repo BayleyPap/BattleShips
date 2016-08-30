@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>70</y>
+      <w>430</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DeploymentController&gt;&gt;
+Package::Microsoft.VisualBasic,System,System.Collections,
+System.Collections.Generic,System.Data,System.Diagnostics,
+SwinGameSDK
+--
+- SHIPS_TOP: int &lt;&lt;const&gt;&gt;
+- SHIPS_LEFT: int &lt;&lt;const&gt;&gt;
+- SHIPS_HEIGHT: int &lt;&lt;const&gt;&gt;
+- SHIPS_WIDTH: int &lt;&lt;const&gt;&gt;
+- TOP_BUTTONS_TOP: int &lt;&lt;const&gt;&gt;
+- TOP_BUTTONS_HEIGHT: int &lt;&lt;const&gt;&gt;
+- PLAY_BUTTONS_LEFT: int &lt;&lt;const&gt;&gt;
+- PLAY_BUTTONS_WIDTH: int &lt;&lt;const&gt;&gt;
+- UP_DOWN_BUTTON_LEFT: int &lt;&lt;const&gt;&gt;
+- LEFT_RIGHT_BUTTON_LEFT: int &lt;&lt;const&gt;&gt;
+- RANDOM_BUTTON_LEFT: int &lt;&lt;const&gt;&gt;
+- RANDOM_BUTTON_WIDTH: int &lt;&lt;const&gt;&gt;
+- DIR_BUTTON_WIDTH: int &lt;&lt;const&gt;&gt;
+- TEXT_OFFSET: int &lt;&lt;const&gt;&gt;
+- _currentDirection: Direction &lt;&lt;static&gt;&gt;
+- _selectedShip: Shipname &lt;&lt;static&gt;&gt;
+--
++ HandleDeploymentInput() &lt;&lt;static&gt;&gt;
++ DoDeployClick() &lt;&lt;static&gt;&gt;
++ DrawDeployment() &lt;&lt;static&gt;&gt;
+- GetShupMouseIsOver(): ShipName &lt;&lt;static&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
