@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>110</y>
+      <w>410</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DiscoveryController&gt;&gt;
+Package::Microsoft.VisualBasic,System,System.Collections,
+System.Collections.Generic,System.Data,System.Diagnostics,
+SwinGameSDK
+--
++ HandleDirsoveryInput() &lt;&lt;static&gt;&gt;
+- DoAttack() &lt;&lt;static&gt;&gt;
++ DrawDiscovery() &lt;&lt;static&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>150</y>
+      <w>460</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;HighScoreController&gt;&gt;
+Package::Microsoft.VisualBasic,System,System.Collections,
+System.Collections.Generic,System.Data,System.Diagnostics,
+SwinGameSDK
+--
+- NAME_WIDTH: int &lt;&lt;const&gt;&gt;
+- SCORES_LEFT: int &lt;&lt;const&gt;&gt;
+
+- _Scores: List&lt;Score&gt; &lt;&lt;static&gt;&gt;
+--
+- LoadScore() &lt;&lt;static&gt;&gt;
+- SaveScores() &lt;&lt;static&gt;&gt;
+--
++ DrawHighScores() &lt;&lt;static&gt;&gt;
++ HandleHighScoreInput() &lt;&lt;static&gt;&gt;
++ ReadHighScore(int value) &lt;&lt;static&gt;&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>530</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+Score
+--
++ Name: string
++ Value: int
+
++ CompareTo(object obj): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
