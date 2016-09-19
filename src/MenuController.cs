@@ -3,7 +3,7 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
+//using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
 
@@ -285,10 +285,10 @@ static class MenuController
 	{
 		switch (button) {
 			case SETUP_MENU_EASY_BUTTON:
-				GameController.SetDifficulty(AIOption.Hard);
+				GameController.SetDifficulty(AIOption.Easy);
 				break;
 			case SETUP_MENU_MEDIUM_BUTTON:
-				GameController.SetDifficulty(AIOption.Hard);
+				GameController.SetDifficulty(AIOption.Medium);
 				break;
 			case SETUP_MENU_HARD_BUTTON:
 				GameController.SetDifficulty(AIOption.Hard);
@@ -320,10 +320,3 @@ static class MenuController
 		}
 	}
 }
-
-//=======================================================
-//Service provided by Telerik (www.telerik.com)
-//Conversion powered by NRefactory.
-//Twitter: @telerik
-//Facebook: facebook.com/telerik
-//=======================================================

@@ -3,6 +3,7 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+//using System.Data;
 using System.Diagnostics;
 using System.IO;
 using SwinGameSDK;
@@ -168,7 +169,7 @@ static class HighScoreController
 			LoadScores();
 
 		//is it a high score
-		if (value > _Scores.Item(_Scores.Count - 1).Value) {
+		if (value > _Scores[_Scores.Count - 1].Value) {
 			Score s = new Score();
 			s.Value = value;
 
@@ -203,10 +204,3 @@ static class HighScoreController
 		}
 	}
 }
-
-//=======================================================
-//Service provided by Telerik (www.telerik.com)
-//Conversion powered by NRefactory.
-//Twitter: @telerik
-//Facebook: facebook.com/telerik
-//=======================================================
