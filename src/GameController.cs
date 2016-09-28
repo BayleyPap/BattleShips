@@ -278,11 +278,11 @@ public static class GameController
 					Audio.SetMusicVolume(0);
 					Console.WriteLine("Music is muted");
 				}
-				else 
-				{
-					Audio.SetMusicVolume(1);
-					Console.WriteLine("Music is unmuted");
-				}	
+					else 
+					{
+						Audio.SetMusicVolume(1);
+						Console.WriteLine("Music is unmuted");
+					}	
 		}
 
 			switch (CurrentState) {
