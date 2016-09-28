@@ -58,7 +58,8 @@ public static class GameResources
 
 	private static void LoadMusic()
 	{
-		NewMusic("Background", "horrordrone.mp3");
+		NewMusic("Background", "backgroundMusic.wav");
+		//music sourced from http://ocremix.org/remix/OCR01182
 	}
 
 	/// <summary>
