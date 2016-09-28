@@ -273,7 +273,19 @@ public static class GameController
 		//Read incoming input events
 		SwinGame.ProcessEvents();
 
-		switch (CurrentState) {
+		if (SwinGame.KeyTyped(KeyCode.vk_m)) {
+				if (Audio.MusicVolume() > 0 ) {
+					Audio.SetMusicVolume(0);
+					Console.WriteLine("Music is muted");
+				}
+				else 
+				{
+					Audio.SetMusicVolume(1);
+					Console.WriteLine("Music is unmuted");
+				}	
+		}
+
+			switch (CurrentState) {
 			case GameState.ViewingMainMenu:
 				MenuController.HandleMainMenuInput();
 				break;
@@ -335,6 +347,7 @@ public static class GameController
 		}
 
 		UtilityFunctions.DrawAnimations();
+		SwinGame.DrawText("Press m to pause music", Color.White, 600, 10);
 
 		SwinGame.RefreshScreen();
 	}
