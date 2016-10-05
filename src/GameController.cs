@@ -347,7 +347,7 @@ public static class GameController
 		}
 
 		UtilityFunctions.DrawAnimations();
-		SwinGame.DrawText("Press m to pause music", Color.White, 600, 10);
+		SwinGame.DrawText("Press m to toggle music volume", Color.White, 550, 10);
 
 		SwinGame.RefreshScreen();
 	}
